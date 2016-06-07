@@ -1,0 +1,46 @@
+
+.diff {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+.diff-item {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.diff-item + .diff-item {
+  border-top: 1px solid #cccccc;
+}
+
+.diff-item-title,
+.diff-item-result {
+  padding: 10px;
+  display: table-cell;
+}
+.diff-item-title {
+  background-color: #fafafa;
+  width: 120px;
+  padding-right: 10px;
+  font-style: italic;
+}
+
+.diff-item-result {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  white-space: pre;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.diff-item-result del {
+  color: #c80c05;
+  background-color: #fff6f6;
+  text-decoration: none;
+}
+
+.diff-item-result ins {
+  color: #44a512;
+  background-color: #ebfce3;
+  text-decoration: none;
+}
